@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #pokemon-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .pokemon-item {
+            cursor: pointer;
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #pokemon-info {
+            margin-top: 20px;
+        }
+        #preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        display: none;
+        }
+        
+        .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #cccccc;
+        border-top-color: #1a1a1a;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <ul id="list"></ul>
+    <div id="pokemon-info">
+    </div>
+    <div class="pagination">
+        <button id="prev" disabled>Previous</button>
+        <button id="next">Next</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

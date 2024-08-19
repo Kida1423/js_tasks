@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100%;
+        }
+		.preloader-6 {
+            display: none;
+        }
+        .circle {
+            border: 4px solid #ccc;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            position: relative;
+            animation: spin 1s linear infinite;
+        }
+        .inner {
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <input type="text" id="country">
+        <button id="btn">Send</button>
+        <div id="results">
+
+        </div>
+		<div class="preloader-6">
+            <div class='circle'>
+                <div class='inner'></div>
+            </div>
+        </div>	
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

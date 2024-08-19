@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+        }
+        input{
+            width: 100%;
+        }
+        form{
+            padding: 50px;
+            background-color: #1E90FF;
+            border-radius: 15px;
+            height: 35%;
+            display: flex;
+            flex-flow: column;
+            width: 20%;
+            gap: 10px;
+        }
+        form>h2{
+            font-size: 24px;
+            
+        }
+        textarea{
+            height: 100px;
+        }
+        form>button{
+            height: 50px;
+            border-radius: 30px;
+            border: none;
+        }
+        .btn{
+            width: 25%;
+            height: 25%;
+            border-radius: 30px;
+            border: none;
+        }
+        .delete:hover{
+            background-color: red;
+        }
+        button:hover{
+            background-color: #EEE8AA;
+        }
+        #posts{
+            padding: 30px;
+            border-radius: 15px;
+            height: 20%;
+            display: flex;
+            flex-flow: column;
+            width: 20%;
+            gap: 10px;
+        }
+        .post{
+            background-color: #1E90FF;
+            padding: 20px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <p>Your text</p>
+        <input type="text" name="" id="country">
+        <input type="" name="" id="date_text">
+        <textarea name="" id="info"></textarea>
+        <button type="button" id="save" >save</button>
+
+    </form>
+    <div id="posts"></div>
+    <script src="index.js"></script>
+</body>
+</html>
